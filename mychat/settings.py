@@ -26,9 +26,10 @@ SECRET_KEY = 'django-insecure-ek8=%67%&+m6_z_h%+xb9(j^h#ok=(sv4+*t!qto*ys_y&o-q!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'video-metting-chat.herokuapp.com'
-]
+
+ALLOWED_HOSTS = ['video-meeting-chat.herokuapp.com']
+
+
 
 
 # Application definition
@@ -123,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = '/absolute/path/to/your/static/root/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
