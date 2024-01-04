@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-ek8=%67%&+m6_z_h%+xb9(j^h#ok=(sv4+*t!qto*ys_y&o-q!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'video-metting-chat.herokuapp.com'
+]
 
 
 # Application definition
